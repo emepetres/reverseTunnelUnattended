@@ -30,8 +30,11 @@ $ make install
 
 How to use it
 -----------
-* Connect to the *server* and see the end of the file corresponding with the *box* you want to connect.
-* TODO
+* Connect to the *server*. Inside the user home you will see a file with this name: *HOST-HDD_ID.log*. At the end of this file you will see the last reverse tunnel and its PORT. The tunnel will be open for about four minutes.
+* From any computer, connect to *box* using the last port you see in the *server* log file as follows:
+```
+$ ssh [box_user]@*server* -p PORT
+```
 
 TODO
 -----------
